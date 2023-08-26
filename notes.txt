@@ -1,0 +1,3 @@
+npx create-next-app@latest .
+npm i @radix-ui/react-icons @radix-ui/themes next-seo react-code-blocks react-slick
+npm i prettier prettier -D
