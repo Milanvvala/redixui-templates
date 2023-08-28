@@ -1,3 +1,7 @@
 npx create-next-app@latest .
-npm i @radix-ui/react-icons @radix-ui/themes next-seo react-code-blocks react-slick
-npm i prettier prettier -D
+npm i @radix-ui/react-icons @radix-ui/themes next-seo react-code-blocks react-slick @chakra-ui/hooks
+npm i prettier husky -D
+
+Home Page Sections : Nav - Hero - Features - Open Source - CTA - Footer
+Templates Page : Nav - Sidebar - Main - Footer 
+
