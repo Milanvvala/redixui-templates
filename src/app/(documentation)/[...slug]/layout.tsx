@@ -1,72 +1,32 @@
-'use client'
-import { useDisclosure } from "@chakra-ui/hooks"
+"use client"
+import Header from "@/components/Header/Header"
+import Footer from "@/components/Footer/Footer"
+import { Flex } from "@radix-ui/themes"
 
-// import { Container,Flex,Stack,Icon,Drawer,DrawerOverlay,DrawerContent,
-// DrawerCloseButton,DrawerHeader,DrawerBody,useDisclosure,IconButton, } from '@chakra-ui/react'
-// import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
-// import { Header } from '#/components/Header'
-// import { Footer } from '#/components/Footer'
-// import { Navigation } from '#/components/Navigation'
-// import { Logo } from '#/components/Logo'
-// import React from 'react'
-// export default function layout() { return ( <div>layout</div>)}
 interface Props {
   children: React.ReactNode
 }
 
-function DocumentationLayout() {
- return (
-  <>DocumentationLayout</>
- )
+const DocumentationLayout = (props: Props) => {
+  const { children } = props
+  return (
+    <>
+      <Header />
+      <Flex py="2" mt="2">
+        <Flex
+          direction={{ initial: "column", lg: "row" }}
+          gap={{ initial: "0", lg: "2" }}
+        >
+          <Flex
+            direction="column"
+            width="100%"
+          >
+            {children}
+          </Flex>
+        </Flex>
+      </Flex>
+      <Footer />
+    </>
+  )
 }
 export default DocumentationLayout
-
-// const DocumentationLayout = (props: Props) => {
-//   const { children } = props
-//   const { isOpen, onOpen, onClose } = useDisclosure()
-//   return (
-//     <> 'layout'
-//       {/* <Header />
-//       <Container maxW={'7xl'} flex={'1 0 auto'} py={8} mt={20}>
-//         <Stack direction={{ base: 'column', lg: 'row' }} spacing={{ base: 0, lg: 8 }}>
-//           <Navigation display={{ base: 'none', lg: 'block' }} />
-//           <Flex direction={'column'} w={'full'} maxW={{ lg: 'calc(100% - 16rem)' }}>
-//             {children}
-//           </Flex>
-//         </Stack>
-//       </Container>
-//       <Footer /> */}
-
-//       {/* <IconButton
-//         display={{ base: 'block', lg: 'none' }}
-//         position={'fixed'}
-//         bottom={4}
-//         right={6}
-//         size={'md'}
-//         isRound={true}
-//         onClick={onOpen}
-//         aria-label={'Toggle Docs Menu'}
-//         bg={'white'}
-//         css={{
-//           boxShadow:
-//             '0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%)',
-//         }}
-//         icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
-//       /> */}
-
-//       {/* <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
-//         <DrawerOverlay>
-//           <DrawerContent>
-//             <DrawerCloseButton />
-//             <DrawerHeader>
-//               <Icon as={Logo} w={10} h={10} />
-//             </DrawerHeader>
-//             <DrawerBody>
-//               <Navigation />
-//             </DrawerBody>
-//           </DrawerContent>
-//         </DrawerOverlay>
-//       </Drawer> */}
-//     </>
-//   )
-// }

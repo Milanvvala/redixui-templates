@@ -7,3 +7,4 @@ export const BUY_ME_A_COFFEE_LINK = 'https://github.com/hauptrolle/chakra-templa
 export const TWITTER_LINK_ACHIM = 'https://github.com/hauptrolle/chakra-templates'
 export const FIGMA_LINK = 'https://github.com/hauptrolle/chakra-templates'
 export const CONTRIBUTORS_LINK = 'https://github.com/hauptrolle/chakra-templates'
+export const SEO_TITLE = 'https://github.com/hauptrolle/chakra-templates'

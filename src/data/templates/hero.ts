@@ -1,31 +1,18 @@
 import { SubCategory } from '../types'
-
 export const hero: SubCategory = {
   name: 'Hero',
   id: 'hero',
   children: [
     {
       name: 'CTA with Annotation',
-      filename: 'callToActionWithAnnotation',
-      tags: ['new'],
-    },
+      filename: 'simple',    },
     {
       name: 'CTA with Illustration',
-      filename: 'callToActionWithIllustration',
-      tags: ['new'],
-    },
-    {
-      name: 'CTA with Video/Image',
-      filename: 'callToActionWithVideo',
-      tags: ['new'],
+      filename: 'bighero',
     },
     {
       name: 'Split Screen with Image',
-      filename: 'splitScreen',
-    },
-    {
-      name: 'With background image and gradient',
-      filename: 'withBackgroundImage',
+      filename: 'splitscreen',
     },
   ],
 }
