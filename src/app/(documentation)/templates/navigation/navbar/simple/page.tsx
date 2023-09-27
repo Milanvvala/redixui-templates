@@ -1,6 +1,6 @@
 "use client"
 import { GitHubLogoIcon, LinkedInLogoIcon, MoonIcon, SunIcon } from "@radix-ui/react-icons"
-import { Logo } from "@/components/Logo"
+import { Logo } from "@/components"
 import { Flex, IconButton, Link } from "@radix-ui/themes"
 
 export default function Simple() {

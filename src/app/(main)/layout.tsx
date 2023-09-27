@@ -1,8 +1,7 @@
 import { Inter } from "next/font/google"
 import type { Metadata } from "next"
 import { Container, Theme, ThemePanel } from "@radix-ui/themes"
-import Header from "@/components/Header/Header"
-import Footer from "@/components/Footer/Footer"
+import { Header, Footer } from "@/components"
 import "@radix-ui/themes/styles.css"
 
 const inter = Inter({ subsets: ["latin"] })

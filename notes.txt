@@ -5,3 +5,40 @@ npm i prettier husky -D
 Home Page Sections : Nav - Hero - Features - Open Source - CTA - Footer
 Templates Page : Nav - Sidebar - Main - Footer 
 
+
+"use client"
+import { Flex, Text } from "@radix-ui/themes"
+
+export default function Dashboard() {
+  return (
+    <Flex>
+        <Text>Text</Text>
+    </Flex>
+  )
+}
+
+Comments
+
+<Flex display={{ initial: "flex", xs: "none" }} align="center" mr="4"></Flex> 
+
+// {
+//   name: "Forms",
+//   id: "forms",
+//   subLabel: "User Login, Newsletter & Multi-Step Forms"
+//   // children: [authentication, newsletter, contact, multistep],
+// },
+// testimonials, pricing, carousel, product,result, imagesAndIcons, accordion
+// import { carousel } from './templates/carousel'
+// import { multistep } from './templates/basic3StepForm'
+// import { newsletter } from './templates/newsletter'
+// import { product } from './templates/product'
+// import { pricing } from './templates/pricing'
+// import { result } from './components/result'
+// import { sidebar } from './templates/sidebar'
+// import { socialButtons } from './components/socialMediaButtons'
+// import { buttons } from './components/buttons'
+// import { authentication } from './templates/authentication'
+// import { testimonials } from './templates/testimonials'
+// import { contact } from "./templates/contact"
+// import { imagesAndIcons } from './components/imagesAndIcons'
+// import { accordion } from './components/accordion'

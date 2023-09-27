@@ -13,6 +13,7 @@ const nextConfig = {
       'avatars4.githubusercontent.com',
       'avatars5.githubusercontent.com',
       'avatars6.githubusercontent.com',
+      'source.unsplash.com'
     ],
   }
 }

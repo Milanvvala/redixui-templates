@@ -4,7 +4,7 @@ import {
   PlusIcon,
   SunIcon
 } from "@radix-ui/react-icons"
-import { Logo } from "@/components/Logo"
+import { Logo } from "@/components"
 import { Avatar, Button, Flex, IconButton, Link } from "@radix-ui/themes"
 
 export default function Dashboard() {

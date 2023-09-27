@@ -1,7 +1,5 @@
-import Categories from "@/components/Categories/page"
-import Features from "@/components/Features/Features"
-import Hero from "@/components/Hero/Hero"
-import { Box, Card, Separator } from "@radix-ui/themes"
+import { Categories, Features, Hero } from "@/components"
+import { Separator } from "@radix-ui/themes"
 
 export default function Home() {
   return (

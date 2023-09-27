@@ -1,5 +1,5 @@
 "use client"
-import { Logo } from "@/components/Logo"
+import { Logo } from "@/components"
 import { Flex, Link, Text } from "@radix-ui/themes"
 
 export default function Large() {

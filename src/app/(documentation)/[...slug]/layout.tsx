@@ -1,13 +1,12 @@
 "use client"
-import Header from "@/components/Header/Header"
-import Footer from "@/components/Footer/Footer"
+import { Header, Footer } from "@/components"
 import { Flex } from "@radix-ui/themes"
 
 interface Props {
   children: React.ReactNode
 }
 
-const DocumentationLayout = (props: Props) => {
+export default function DocumentationLayout(props: Props) {
   const { children } = props
   return (
     <>
@@ -17,10 +16,7 @@ const DocumentationLayout = (props: Props) => {
           direction={{ initial: "column", lg: "row" }}
           gap={{ initial: "0", lg: "2" }}
         >
-          <Flex
-            direction="column"
-            width="100%"
-          >
+          <Flex direction="column" width="100%">
             {children}
           </Flex>
         </Flex>
@@ -29,4 +25,3 @@ const DocumentationLayout = (props: Props) => {
     </>
   )
 }
-export default DocumentationLayout

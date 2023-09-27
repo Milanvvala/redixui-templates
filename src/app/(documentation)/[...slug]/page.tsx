@@ -2,8 +2,7 @@ import { Metadata } from "next/types"
 import { notFound } from "next/navigation"
 import { SEO_TITLE } from "@/utils/const"
 import { data } from "@/data"
-import { PageHeading } from "@/components/PageHeading/PageHeading"
-import { CodeExamples } from "@/components/CodeExamples/CodeExamples"
+import { PageHeading, CodeExamples } from "@/components"
 
 type Params = { slug: string[] }
 interface Context {
