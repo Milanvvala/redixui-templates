@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image"
+
 export interface Category {
   name: string
   subLabel: string
@@ -10,10 +12,10 @@ export interface SubCategory {
   id: string
   description?: string
   children?: Template[]
+  image: string | StaticImageData
 }
 
 export interface Template {
   name: string
   filename: string
-  tags?: string[]
 }

@@ -1,8 +1,10 @@
-import { SubCategory } from "../types"
+import { SubCategory } from "./types"
+import { footerImg, navbarImg } from "@/assets"
 
 export const navbar: SubCategory = {
   name: "Navbar",
   id: "navbar",
+  image: navbarImg,
   children: [
     {
       name: "Simple with Icon and Dark theme switcher",
@@ -22,6 +24,7 @@ export const navbar: SubCategory = {
 export const footer: SubCategory = {
   name: "Footer",
   id: "footer",
+  image: footerImg,
   children: [
     {
       name: "Simple with Logo, Navigation, Socialicons",

@@ -1,34 +1,74 @@
 "use client"
-import { Box, Card, Flex, Grid, Inset, Text } from "@radix-ui/themes"
+import { Card, Flex, Grid, Inset, Link, Text } from "@radix-ui/themes"
 import Image from "next/image"
-import img from "@/utils/headers-dark.8aceaf30.svg"
+import img from "@/assets/headers-dark.8aceaf30.svg"
+import { data } from "../lib"
+import { usePathname } from "next/navigation"
 
-export default function Categories() {
+interface Props {
+  href: string
+  children: React.ReactNode
+  pathname: string
+}
+interface StackProps {}
+
+const NavigationLink = (props: Props) => {
+  const { href, children } = props
+  return (
+    <Link href={href} color="gray">
+      {children}
+    </Link>
+  )
+}
+
+export default function Categories(props: StackProps) {
   const cards: String[] = ["Navbar", "Footer", "Hero", "Fetures", "Blog"]
+  const pathname = usePathname()
 
   return (
-    <Flex my="8" direction="column" gap="3" align="center">
+    <Flex my="8" direction="column" gap="6" align="center">
       <Text size="8" weight="bold">
         Templates
       </Text>
-      
+
       {/* Template Grid */}
-      <Grid columns="3" gap="4" mt="8">
-        {cards.map((f, i) => {
+      <Flex
+        grow="1"
+        shrink="0"
+        {...props}
+        direction="column"
+        align="center"
+        gap="6"
+      >
+        {data.map((category) => {
           return (
-            <Box key={i} width="max-content">
-              <Card>
-                <Inset side="top" mb="4">
-                  <Image src={img} alt="img" height={150} />
-                </Inset>
-                <Text size="6" weight="medium" mx="4">
-                  {f}
-                </Text>
-              </Card>
-            </Box>
+            <Flex key={category.id} gap="4" direction="column">
+              <Text size="5" weight="medium" color="iris">
+                {category.name}
+              </Text>
+              <Grid columns="3" gap="2">
+                {category.children?.map((subCategory) => (
+                  <NavigationLink
+                    pathname={pathname}
+                    key={subCategory.id}
+                    href={`/${category.id}/${subCategory.id}`}
+                  >
+                    <Card>
+                      <Inset side="top" mb="4">
+                        <Image src={subCategory.image} alt="img" height={100} />
+                      </Inset>
+                      <Text size="3" weight="medium" mx="4">
+                        {subCategory.name}
+                      </Text>
+                    </Card>
+                  </NavigationLink>
+                ))}
+              </Grid>
+            </Flex>
           )
         })}
-      </Grid>
+        {/* </Grid> */}
+      </Flex>
     </Flex>
   )
 }

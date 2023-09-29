@@ -1,7 +1,7 @@
 "use client"
 import { useRef } from "react"
 import { CodeBlock } from "react-code-blocks"
-import { Category, SubCategory, Template } from "@/data/types"
+import { Category, SubCategory, Template } from "@/lib/types"
 import { Box, Button, Flex } from "@radix-ui/themes"
 import useClipboard from "react-use-clipboard"
 

@@ -1,8 +1,10 @@
-import { SubCategory } from "../types"
+import { SubCategory } from "./types"
+import { buttonsImg, cardImg, formsImg } from "@/assets"
 
 export const buttons: SubCategory = {
   name: "Buttons",
   id: "buttons",
+  image: buttonsImg,
   children: [
     {
       name: "Buttons_1",
@@ -22,6 +24,7 @@ export const buttons: SubCategory = {
 export const cards: SubCategory = {
   name: "Cards",
   id: "cards",
+  image: cardImg,
   children: [
     {
       name: "Pricing",
@@ -37,6 +40,7 @@ export const cards: SubCategory = {
 export const forms: SubCategory = {
   name: "Forms",
   id: "forms",
+  image: formsImg,
   children: [
     {
       name: "Contact Form",
@@ -49,6 +53,6 @@ export const forms: SubCategory = {
     {
       name: "newsletter",
       filename: "newsletter"
-    },
+    }
   ]
 }

@@ -1,32 +1,39 @@
 "use client"
 import { Box, Button, Flex, Text } from "@radix-ui/themes"
-import Img from "@/utils/headers-dark.8aceaf30.svg"
+import img from "@/lib/assets/headers-dark.8aceaf30.svg"
 import Image from "next/image"
 
 export default function BigHero() {
   return (
-    <Flex direction="column" gap="8" justify="center"
-    align="center"
-    p="8"
-    m="8"
-    width="auto">
-      <Text size='9' weight="bold" align="center">
-        Meeting scheduling <Text color="iris" size='9' weight="bold" >made easy</Text>
+    <Flex
+      direction="column"
+      gap="8"
+      justify="center"
+      align="center"
+      p="8"
+      m="8"
+      width="auto"
+    >
+      <Text size="9" weight="bold" align="center">
+        Meeting scheduling{" "}
+        <Text color="iris" size="9" weight="bold">
+          made easy
+        </Text>
       </Text>
-      <Text color="gray" size='4' align="center" mx='9'>
+      <Text color="gray" size="4" align="center" mx="9">
         Never miss a meeting. Never be late for one too. Keep track of your
         meetings and receive smart reminders in appropriate times. Read your
         smart “Daily Agenda” every morning.
       </Text>
-      <Flex gap='3'>
-        <Button variant="solid" radius="full" color="iris" size='4'>
+      <Flex gap="3">
+        <Button variant="solid" radius="full" color="iris" size="4">
           Get Started
         </Button>
-        <Button color="gray" variant="soft" radius="full" size='4'>
+        <Button color="gray" variant="soft" radius="full" size="4">
           Learn More
         </Button>
       </Flex>
-      <Image src={Img} alt="alt" />
+      <Image src={img} alt="alt" />
     </Flex>
   )
 }

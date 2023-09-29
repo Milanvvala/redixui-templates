@@ -11,8 +11,8 @@ import {
   Tabs,
   Text
 } from "@radix-ui/themes"
-import { getExampleUrl } from "@/utils/getExampleUrl"
-import type { Category, SubCategory, Template } from "@/data/types"
+import { getExampleUrl } from "@/lib/getExampleUrl"
+import type { Category, SubCategory, Template } from "@/lib/types"
 import {
   DesktopIcon,
   ExternalLinkIcon,

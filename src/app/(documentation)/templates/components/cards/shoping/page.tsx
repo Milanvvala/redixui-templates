@@ -16,7 +16,7 @@ import {
   Text
 } from "@radix-ui/themes"
 import Image from "next/image"
-// import img from "@/utils/headers-dark.8aceaf30.svg"
+// import img from "@/lib/assets/headers-dark.8aceaf30.svg"
 
 export default function Shoping() {
   const img = "https://source.unsplash.com/random/300x300/?product"
@@ -60,7 +60,7 @@ export default function Shoping() {
           <Image src={img} width={300} height={300} alt="alt" />
         </Inset>
 
-        <Flex justify="between"  align='end'> 
+        <Flex justify="between" align="end">
           <Flex direction="column" gap="2">
             <Badge color="red" radius="full">
               NEW

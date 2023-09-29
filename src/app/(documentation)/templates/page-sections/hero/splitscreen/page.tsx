@@ -1,6 +1,6 @@
 "use client"
 import { Box, Button, Flex, Text } from "@radix-ui/themes"
-import Img from "@/utils/headers-dark.8aceaf30.svg"
+import Img from "@/lib/assets/headers-dark.8aceaf30.svg"
 import Image from "next/image"
 
 export default function SpleetScreen() {

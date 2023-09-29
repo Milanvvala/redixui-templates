@@ -1,7 +1,7 @@
 "use client"
 import { Flex } from "@radix-ui/themes"
 import { Example } from "@/components"
-import type { Template } from "@/data/types"
+import type { Template } from "@/lib/types"
 
 interface Props {
   templates?: Template[]

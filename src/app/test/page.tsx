@@ -1,14 +1,13 @@
 "use client"
-import { useDisclosure } from "@chakra-ui/hooks"
-import { Example, Logo,PageHeading } from "@/components"
+import { Categories } from "@/components"
+import Image from "next/image"
+import { featuresImg } from "@/assets"
 
 export default function page() {
-  const Links = ["Dashboard", "Projects", "Team"]
-  const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <>
-      {/* <Example /> */}
-      <PageHeading />
+      <Categories />
+      <Image src={featuresImg} height={200} width={200} alt="alt" />
     </>
   )
 }

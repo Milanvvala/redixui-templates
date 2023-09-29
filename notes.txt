@@ -17,28 +17,58 @@ export default function Dashboard() {
   )
 }
 
+https://source.unsplash.com/random/300x300/?product
+
 Comments
 
 <Flex display={{ initial: "flex", xs: "none" }} align="center" mr="4"></Flex> 
 
-// {
-//   name: "Forms",
-//   id: "forms",
-//   subLabel: "User Login, Newsletter & Multi-Step Forms"
-//   // children: [authentication, newsletter, contact, multistep],
-// },
-// testimonials, pricing, carousel, product,result, imagesAndIcons, accordion
-// import { carousel } from './templates/carousel'
-// import { multistep } from './templates/basic3StepForm'
-// import { newsletter } from './templates/newsletter'
-// import { product } from './templates/product'
-// import { pricing } from './templates/pricing'
-// import { result } from './components/result'
-// import { sidebar } from './templates/sidebar'
-// import { socialButtons } from './components/socialMediaButtons'
-// import { buttons } from './components/buttons'
-// import { authentication } from './templates/authentication'
-// import { testimonials } from './templates/testimonials'
-// import { contact } from "./templates/contact"
-// import { imagesAndIcons } from './components/imagesAndIcons'
-// import { accordion } from './components/accordion'
+// import { data } from "../data"
+
+// export interface NavItem {
+//   label: string
+//   subLabel?: string
+//   children?: Array<NavItem>
+//   href?: string
+// }
+
+// export const NAV_ITEMS: Array<NavItem> = [
+//   {
+//     label: "Templates",
+//     children: data.map((category) => ({
+//       label: category.name,
+//       subLabel: category.subLabel,
+//       href: `/${category.id}/${category.children?.[0].id}`
+//     }))
+//   }
+// ]
+
+// import { CONTRIBUTE_LINK, DISCORD_INVITE_LINK, GITHUB_LINK } from '../utils/const'
+// {label: 'Contribute',href: CONTRIBUTE_LINK,},
+// {label: 'GitHub',href: GITHUB_LINK,},
+// {label: 'Discord',href: DISCORD_INVITE_LINK,},
+
+export const CONTRIBUTE_LINK = 'https://github.com/hauptrolle/chakra-templates'
+export const ANALYTICS_LINK = 'https://github.com/hauptrolle/chakra-templates'
+export const TWITTER_LINK = 'https://github.com/hauptrolle/chakra-templates'
+export const TWITTER_LINK_ACHIM = 'https://github.com/hauptrolle/chakra-templates'
+export const FIGMA_LINK = 'https://github.com/hauptrolle/chakra-templates'
+export const CONTRIBUTORS_LINK = 'https://github.com/hauptrolle/chakra-templates'
+export const DISCORD_INVITE_LINK = 'https://github.com/hauptrolle/chakra-templates'
+
+
+        {/* <Grid columns="3" gap="4" mt="8"> */}
+        {/* {cards.map((f, i) => {
+            return (
+              <Box key={i} width="max-content">
+                <Card>
+                  <Inset side="top" mb="4">
+                    <Image src={img} alt="img" height={150} />
+                  </Inset>
+                  <Text size="6" weight="medium" mx="4">
+                    {f}
+                  </Text>
+                </Card>
+              </Box>
+            )
+          })} */}

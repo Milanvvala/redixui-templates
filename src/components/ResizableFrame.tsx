@@ -1,8 +1,8 @@
 "use client"
 import { useEffect, useRef, useState } from "react"
 import { Resizable } from "re-resizable"
-import { getExampleUrl } from "@/utils/getExampleUrl"
-import { Category, SubCategory, Template } from "../data/types"
+import { getExampleUrl } from "@/lib/getExampleUrl"
+import { Category, SubCategory, Template } from "../lib/types"
 import { Box } from "@radix-ui/themes"
 
 type IframeProps = {

@@ -1,7 +1,7 @@
 import { Metadata } from "next/types"
 import { notFound } from "next/navigation"
-import { SEO_TITLE } from "@/utils/const"
-import { data } from "@/data"
+import { SEO_TITLE } from "@/lib/const"
+import { data } from "@/lib"
 import { PageHeading, CodeExamples } from "@/components"
 
 type Params = { slug: string[] }
@@ -14,6 +14,7 @@ interface Props {
 
 const fetchTemplate = async (ctx: Context) => {
   const { slug } = ctx.params
+  console.log(slug)
   if (!slug) {
     notFound()
   }

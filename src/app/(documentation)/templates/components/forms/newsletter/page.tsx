@@ -3,14 +3,14 @@ import { Box, Button, Card, Flex, Text, TextField } from "@radix-ui/themes"
 
 export default function Newsletter() {
   return (
-    <Box p="8" m="8">
-      <Card size="2">
-        <Flex gap="4" align="center">
+    <Flex p="8" m="8">
+      <Card size="4">
+        <Flex gap="4" align="center" direction='column'>
           <Text size="6" weight="bold">
             Subscribe to our Newsletter
           </Text>
           <Flex gap="2">
-            <TextField.Input />
+            <TextField.Input placeholder="enter your email"/>
             <Button color="blue" variant="solid">
               Submit
             </Button>
@@ -20,6 +20,6 @@ export default function Newsletter() {
           </Text>
         </Flex>
       </Card>
-    </Box>
+    </Flex>
   )
 }
