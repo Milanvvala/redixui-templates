@@ -1,30 +1,14 @@
-"use client"
-import {
-  CircleIcon,
-  PlusCircledIcon,
-  PlusIcon,
-  StarFilledIcon,
-  StarIcon
-} from "@radix-ui/react-icons"
-import {
-  Badge,
-  Box,
-  Card,
-  Flex,
-  Inset,
-  Separator,
-  Text
-} from "@radix-ui/themes"
+import { PlusIcon, StarFilledIcon, StarIcon } from "@radix-ui/react-icons"
+import { Badge, Box, Card, Flex, Inset, Text } from "@radix-ui/themes"
 import Image from "next/image"
-// import img from "@/lib/assets/headers-dark.8aceaf30.svg"
 
 export default function Shoping() {
   const img = "https://source.unsplash.com/random/300x300/?product"
 
   return (
-    <Flex gap="8" p="8">
+    <Flex gap="4" p="6">
       {/* Card_1 */}
-      <Box m="6" width="max-content">
+      <Box width="max-content">
         <Card>
           <Flex gap="4" direction="column" align="center">
             <Image

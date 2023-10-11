@@ -1,4 +1,3 @@
-"use client"
 import {
   ChatBubbleIcon,
   DotsVerticalIcon,
@@ -20,7 +19,7 @@ import {
 
 export default function Simple() {
   return (
-    <Flex gap="8" m="6" width="100%" align="center" justify="center" >
+    <Flex gap="8" m="6" width="100%" align="center" justify="center">
       {/* Button_1 : Theme Swicher */}
       <Card size={"4"}>
         <Flex height="100%" justify="center" align="center">

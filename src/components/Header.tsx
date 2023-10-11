@@ -21,12 +21,14 @@ export default function Header() {
           pr="4"
           display={{ initial: "none", xs: "flex" }}
         >
-          <Link href="/templates" highContrast>
+          <Link href="#templates" highContrast>
             Templates
           </Link>
-          <Link href="/templates">Docs</Link>
+          <Link href="https://www.radix-ui.com/">Docs</Link>
           <IconButton variant="ghost">
-            <GitHubLogoIcon />
+            <Link href="https://www.github.com">
+              <GitHubLogoIcon />
+            </Link>
           </IconButton>
           <IconButton variant="ghost">
             <SunIcon />

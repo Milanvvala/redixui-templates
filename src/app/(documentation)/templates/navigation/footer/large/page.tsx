@@ -1,4 +1,3 @@
-"use client"
 import { Logo } from "@/components"
 import {
   EnvelopeClosedIcon,
@@ -13,17 +12,17 @@ export default function Large() {
     {
       listTitle: "Support",
       items: [
-        { linkTitle: "Help Center", link: "http://example.com" },
-        { linkTitle: "Terms of Service", link: "http://example.com" },
-        { linkTitle: "Privacy Policy", link: "http://example.com" },
+        { linkTitle: "Help Center", link: "example.com" },
+        { linkTitle: "Terms of Service", link: "example.com" },
+        { linkTitle: "Privacy Policy", link: "example.com" }
       ]
     },
     {
       listTitle: "Company",
       items: [
-        { linkTitle: "About", link: "http://example.com" },
-        { linkTitle: "Careers", link: "http://example.com" },
-        { linkTitle: "Contact", link: "http://example.com" },
+        { linkTitle: "About", link: "example.com" },
+        { linkTitle: "Careers", link: "example.com" },
+        { linkTitle: "Contact", link: "example.com" }
       ]
     }
   ]
@@ -32,8 +31,16 @@ export default function Large() {
     <Flex justify="between" my="4" mx="8" align="start" p="4">
       <Flex pl="4" direction="column" gap="4">
         <Logo />
-        <Text size="3">© 2022 Chakra Templates. All rights reserved</Text>
-        <Flex justify="between" gap="5" align="center" pr="4" width='max-content'>
+        <Text size="3">
+          © 2022 Redix Themes Templates. All rights reserved
+        </Text>
+        <Flex
+          justify="between"
+          gap="5"
+          align="center"
+          pr="4"
+          width="max-content"
+        >
           <IconButton variant="soft">
             <TwitterLogoIcon />
           </IconButton>

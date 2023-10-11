@@ -1,4 +1,3 @@
-"use client"
 import {
   EnvelopeClosedIcon,
   GitHubLogoIcon,
@@ -51,7 +50,7 @@ export default function ContactForm() {
 
           <Flex gap="8" align="center" justify="center" width="100%">
             <IconButton variant="ghost" color="gray">
-              <LinkedInLogoIcon />{" "}
+              <LinkedInLogoIcon />
             </IconButton>
             <IconButton variant="ghost" color="gray">
               <GitHubLogoIcon />

@@ -1,11 +1,4 @@
-"use client"
-import { Logo } from "@/components"
-import {
-  InstagramLogoIcon,
-  LinkedInLogoIcon,
-  TwitterLogoIcon
-} from "@radix-ui/react-icons"
-import { Box, Flex, IconButton, Link, Text } from "@radix-ui/themes"
+import { Flex, Link, Text } from "@radix-ui/themes"
 
 export default function Simple() {
   return (
@@ -16,7 +9,7 @@ export default function Simple() {
         <Link href="example.com">Blog</Link>
         <Link href="example.com">Contact</Link>
       </Flex>
-      <Text size="3">© 2022 Chakra Templates. All rights reserved</Text>
+      <Text size="3">© 2022 Redix Themes Templates. All rights reserved</Text>
     </Flex>
   )
 }

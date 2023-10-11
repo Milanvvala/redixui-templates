@@ -1,7 +1,6 @@
-"use client"
-import { Box, Button, Flex, Text } from "@radix-ui/themes"
-import img from "@/lib/assets/headers-dark.8aceaf30.svg"
+import { Button, Flex, Text } from "@radix-ui/themes"
 import Image from "next/image"
+import { placeholderImg } from "@/assets"
 
 export default function BigHero() {
   return (
@@ -10,12 +9,12 @@ export default function BigHero() {
       gap="8"
       justify="center"
       align="center"
-      p="8"
-      m="8"
+      p="6"
+      m="4"
       width="auto"
     >
       <Text size="9" weight="bold" align="center">
-        Meeting scheduling{" "}
+        Meeting scheduling
         <Text color="iris" size="9" weight="bold">
           made easy
         </Text>
@@ -33,7 +32,7 @@ export default function BigHero() {
           Learn More
         </Button>
       </Flex>
-      <Image src={img} alt="alt" />
+      <Image src={placeholderImg} width={600} height={400} alt="alt" />
     </Flex>
   )
 }

@@ -1,4 +1,3 @@
-"use client"
 import { RocketIcon } from "@radix-ui/react-icons"
 import { Badge, Button, Flex, Grid, Separator, Text } from "@radix-ui/themes"
 import Image from "next/image"

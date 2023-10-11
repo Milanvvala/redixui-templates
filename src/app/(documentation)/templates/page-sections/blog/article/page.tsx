@@ -1,4 +1,3 @@
-"use client"
 import { Avatar, Badge, Flex, Separator, Text } from "@radix-ui/themes"
 import Image from "next/image"
 
@@ -31,17 +30,21 @@ export default function Article() {
           <Text size="8" weight="bold">
             {article.title}
           </Text>
-          <Flex align='center' gap="4">
-            <Avatar src="https://source.unsplash.com/random/300x300/?face,portrait" fallback='M' radius="full"/>
+          <Flex align="center" gap="4">
+            <Avatar
+              src="https://source.unsplash.com/random/300x300/?face,portrait"
+              fallback="M"
+              radius="full"
+            />
             <Text size="3">{article.author}</Text>
             <Separator orientation="vertical" size="1" />
             <Text size="3">{article.date}</Text>
           </Flex>
         </Flex>
       </Flex>
-        <Text size="4" color="gray">
-          {article.description}
-        </Text>
+      <Text size="4" color="gray">
+        {article.description}
+      </Text>
     </Flex>
   )
 }

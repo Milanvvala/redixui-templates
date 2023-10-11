@@ -1,10 +1,9 @@
-"use client"
 import { BookmarkIcon, HeartIcon, RocketIcon } from "@radix-ui/react-icons"
 import { Button, Card, Flex, IconButton, Text } from "@radix-ui/themes"
 
 export default function ButtonTypes() {
   return (
-    <Flex m="4" p="8">
+    <Flex m="4" p="6">
       <Card size="3">
         <Flex direction="column" gap="6" align="start" justify="start" mb="8">
           <Text size="5" weight="medium">

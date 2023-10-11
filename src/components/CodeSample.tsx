@@ -14,7 +14,6 @@ interface Props {
 export default function CodeSample(props: Props) {
   const { template, category, subCategory } = props
   const code =
-    // require(`!!raw-loader!../../app/(documentation)/templates/${category.id}/${subCategory.id}/${template.filename}/page.tsx`).default
     require(`!!raw-loader!../app/(documentation)/templates/${category.id}/${subCategory.id}/${template.filename}/page.tsx`).default
   const [isCopied, setCopied] = useClipboard(code)
   const codeRef = useRef<HTMLDivElement>(null)

@@ -1,4 +1,3 @@
-"use client"
 import {
   Avatar,
   Badge,
@@ -9,7 +8,6 @@ import {
   Text
 } from "@radix-ui/themes"
 import Image from "next/image"
-import img from "@/lib/assets/headers-dark.8aceaf30.svg"
 
 export default function ArticleList() {
   const articleListObj = [
@@ -38,13 +36,13 @@ export default function ArticleList() {
       author: "Jay Khan",
       date: "06/09/2021",
       tags: ["tech", "product"],
-      image: img
+      image: "https://source.unsplash.com/random/300x300/?product"
     }
   ]
   return (
-    <Flex direction="column" gap="8" justify="start" m="4" p="8">
+    <Flex direction="column" gap="8" justify="start" m="4" p="6">
       <Heading size="9" as="h1" weight="bold">
-        Stories by Chakra Templates
+        Stories by Redix Themes Templates
       </Heading>
 
       {articleListObj.map((article) => {

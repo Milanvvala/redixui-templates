@@ -1,4 +1,3 @@
-"use client"
 import { ButtonIcon, PersonIcon, SewingPinIcon } from "@radix-ui/react-icons"
 import { Card, Flex, Text } from "@radix-ui/themes"
 
@@ -15,8 +14,8 @@ export default function Dashboard() {
       justify="center"
       gap="8"
       direction="column"
-      m="8"
-      p="8"
+      m="4"
+      p="6"
     >
       {/* Heading */}
       <Text size="8" weight="bold">
@@ -24,13 +23,13 @@ export default function Dashboard() {
       </Text>
 
       {/* Statistics */}
-      <Flex align="center" gap="4" >
+      <Flex align="center" gap="4">
         {statsObj.map((stat) => {
           return (
-            <Card size="2" key={stat.statTitle} style={{width:'300px'}}>
-              <Flex  justify="between" >
-                <Flex direction='column'>
-                  <Text size="2" >{stat.statTitle}</Text>
+            <Card size="2" key={stat.statTitle} style={{ width: "300px" }}>
+              <Flex justify="between">
+                <Flex direction="column">
+                  <Text size="2">{stat.statTitle}</Text>
                   <Text size="9" weight="medium" color="grass">
                     {stat.Stat}
                   </Text>

@@ -1,11 +1,10 @@
-"use client"
 import {
   AvatarIcon,
   LightningBoltIcon,
   MixIcon,
   RocketIcon
 } from "@radix-ui/react-icons"
-import { Card, Flex, IconButton, Link, Text } from "@radix-ui/themes"
+import { Card, Flex, Grid, IconButton, Link, Text } from "@radix-ui/themes"
 
 export default function Complex() {
   const featuresObj = [
@@ -45,8 +44,8 @@ export default function Complex() {
       align="center"
       justify="center"
       gap="8"
-      p="8"
-      m="8"
+      p="6"
+      m="4"
     >
       {/* Heading */}
       <Flex direction="column" align="center" justify="center" gap="6">
@@ -63,12 +62,14 @@ export default function Complex() {
       </Flex>
 
       {/* Features */}
-      <Flex align='center' gap='5' wrap='wrap' justify='center'>
+      <Grid columns="2" gap="8">
         {featuresObj.map((feature) => {
           return (
-            <Card key={feature.Title} size='2' style={{maxWidth:'500px'}}>
+            <Card key={feature.Title} size="2" style={{ maxWidth: "500px" }}>
               <Flex direction="column" gap="2">
-                <IconButton size='3' radius="full">{feature.Icon}</IconButton>
+                <IconButton size="3" radius="full">
+                  {feature.Icon}
+                </IconButton>
                 <Text size="5" weight="medium">
                   {feature.Title}
                 </Text>
@@ -82,7 +83,7 @@ export default function Complex() {
             </Card>
           )
         })}
-      </Flex>
+      </Grid>
     </Flex>
   )
 }

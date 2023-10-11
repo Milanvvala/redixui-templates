@@ -1,5 +1,4 @@
-"use client"
-import { Box, Button, Flex, Link, Text } from "@radix-ui/themes"
+import { Button, Flex, Link, Text } from "@radix-ui/themes"
 
 export default function Simple() {
   return (
@@ -8,8 +7,8 @@ export default function Simple() {
       gap="8"
       justify="center"
       align="center"
-      p="8"
-      m="8"
+      p="6"
+      m="4"
       width="auto"
     >
       <Text size="9" weight="bold" align="center">

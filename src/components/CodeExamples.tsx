@@ -11,9 +11,8 @@ interface Props {
 
 export default function CodeExamples(props: Props) {
   const { templates, category, subCategory } = props
-
   return (
-    <Flex gap="3" direction="column">
+    <Flex direction="column">
       {templates?.map((t) => (
         <Example
           key={t.filename}

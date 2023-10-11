@@ -1,4 +1,3 @@
-"use client"
 import { Logo } from "@/components"
 import {
   GitHubLogoIcon,
@@ -23,7 +22,9 @@ export default function SmallCentered() {
       <Separator size="4" />
 
       <Flex justify="between" align="center" px="4">
-        <Text size="2">© 2022 Chakra Templates. All rights reserved</Text>
+        <Text size="2">
+          © 2022 Redix Themes Templates. All rights reserved
+        </Text>
         <Flex gap="5">
           <IconButton variant="soft" radius="full">
             <InstagramLogoIcon />

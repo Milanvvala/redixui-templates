@@ -1,5 +1,3 @@
-"use client"
-
 import { CheckCircledIcon } from "@radix-ui/react-icons"
 import { Flex, Grid, IconButton, Text } from "@radix-ui/themes"
 
@@ -33,8 +31,8 @@ export default function Simple() {
       align="center"
       justify="center"
       gap="8"
-      p="8"
-      m="8"
+      p="6"
+      m="4"
     >
       {/* Heading */}
       <Flex direction="column" align="center" justify="center" gap="6">

@@ -6,26 +6,25 @@ import "@radix-ui/themes/styles.css"
 
 const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
-  metadataBase: new URL("https://chakra-templates.dev/"),
-  title: "RedixUI Templates",
+  metadataBase: new URL("https://..../"), //work
+  title: "Redix Themes Templates",
   description: "Templates for Redix UI",
-  // "A growing open-source collection of hand-crafted Chakra UI templates ready to drop into your React project."
   keywords:
-    "chakra ui, ui templates, web templates, web design, react templates, react ui templates, chakra ui templates, chakra templates",
+    "redix ui, ui templates, web templates, web design, react templates, react ui templates, Redix ui templates, Redix Themes Templates",
   openGraph: {
     type: "website",
     title: "RedixUI Templates",
     description:
-      "A growing open-source collection of hand-crafted Chakra UI templates ready to drop into your React project.",
-    images: "https://chakra-templates.dev/favicon.png",
+      "A growing open-source collection of hand-crafted Redix UI templates ready to drop into your React project.",
+    images: "", //work
     siteName: "RedixUI Templates",
-    url: "https://chakra-templates.dev/"
+    url: "" //work
   },
   twitter: {
     title: "RedixUI Templates",
     description:
-      "A growing open-source collection of hand-crafted Chakra UI templates ready to drop into your React project.",
-    images: "https://chakra-templates.dev/favicon.png",
+      "A growing open-source collection of hand-crafted Redix UI templates ready to drop into your React project.",
+    images: "...", //work
     card: "summary_large_image"
   }
 }

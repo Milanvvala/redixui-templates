@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react"
 import { Resizable } from "re-resizable"
 import { getExampleUrl } from "@/lib/getExampleUrl"
 import { Category, SubCategory, Template } from "../lib/types"
-import { Box } from "@radix-ui/themes"
+import { Box, Flex } from "@radix-ui/themes"
 
 type IframeProps = {
   template: Template
@@ -37,7 +37,6 @@ export default function ResizableFrame(props: IframeProps) {
   if (!exampleUrl) return null
 
   return (
-    <Box>
       <Resizable
         bounds={"parent"}
         minWidth={375}
@@ -54,6 +53,5 @@ export default function ResizableFrame(props: IframeProps) {
           title="#"
         />
       </Resizable>
-    </Box>
   )
 }

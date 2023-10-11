@@ -1,5 +1,5 @@
 "use client"
-import { Badge, Flex, Text } from "@radix-ui/themes"
+import { Badge, Flex, Grid, Text } from "@radix-ui/themes"
 import { CopyIcon, FaceIcon, MagnifyingGlassIcon } from "@radix-ui/react-icons"
 
 export default function Features() {
@@ -25,13 +25,23 @@ export default function Features() {
   ]
 
   return (
-    <Flex my="8" direction="column" gap="3" align="center">
+    <Flex
+      my={{ initial: "4", md: "8" }}
+      mx="5"
+      direction="column"
+      gap="3"
+      align="center"
+    >
       {/* Heading */}
-      <Text size="8" weight="bold">
-        Getting started in <Text color="iris">3 easy steps</Text>
+      <Text
+        size={{ initial: "8", lg: "9" }}
+        weight={{ initial: "medium", lg: "bold" }}
+      >
+        Getting started in <br />
+        <Text color="iris">3 easy steps</Text>
       </Text>
 
-      <Flex gap="2">
+      <Grid columns={{ initial: "1", lg: "3" }} gap={{ initial: "1", lg: "4" }}>
         {FeturesObj.map((f, i) => {
           return (
             <Flex key={i} gap="2" direction="column" m="4" align="center">
@@ -45,7 +55,7 @@ export default function Features() {
             </Flex>
           )
         })}
-      </Flex>
+      </Grid>
     </Flex>
   )
 }

@@ -1,5 +1,6 @@
+'use client'
 import React, { useState } from "react"
-import { Badge, Flex } from "@radix-ui/themes"
+import { Badge, Flex, IconButton } from "@radix-ui/themes"
 import { DesktopIcon, MobileIcon, TableIcon } from "@radix-ui/react-icons"
 
 export default function RadioCard() {
@@ -20,16 +21,16 @@ export default function RadioCard() {
       icon: <DesktopIcon />
     }
   ]
-  
-  // const [varient, setVarient] : '"outline" | "solid" | "soft" | "surface" | undefined'= useState("outline")
+
+  const [varient, setVarient]: any = useState("outline")
   return (
     <Flex>
       {options.map((value) => {
         const label = value.width
         return (
-          <Badge size="2" variant={varient} key={value.label}>
+          <IconButton size="2" variant={varient} key={value.label}>
             {value.icon}
-          </Badge>
+          </IconButton>
         )
       })}
     </Flex>

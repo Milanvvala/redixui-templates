@@ -1,5 +1,5 @@
 "use client"
-import { Button, Flex, Heading, Text } from "@radix-ui/themes"
+import { Button, Flex, Grid, Heading, Link, Text } from "@radix-ui/themes"
 import {
   CheckIcon,
   ExternalLinkIcon,
@@ -10,63 +10,67 @@ export default function Hero() {
   const FeaturesCol1 = [
     "Responsive Demos",
     "Easy Customizable",
-    "Written in TypeScript"
+    "Written in TypeScript",
+    "100% Open Source",
+    "10 Templates",
+    "5 Categories"
   ]
-  const FeaturesCol2 = ["100% Open Source", "10 Templates", "5 Categories"]
 
   return (
-    <Flex mx="5" my="8" pt="4" direction="column" gap="7">
-      <Heading size="9" weight="bold">
+    <Flex
+      mx="5"
+      my={{ initial: "4", md: "8" }}
+      py="4"
+      direction="column"
+      gap={{ initial: "4", lg: "9" }}
+    >
+      <Heading
+        size={{ initial: "8", lg: "9" }}
+        weight={{ initial: "medium", lg: "bold" }}
+      >
         10 responsive components
         <br />
         built with Mantine
       </Heading>
 
-      <Text size="4" weight="light" color="gray">
+      <Text size={{ initial: "3", lg: "4" }} weight="light" color="gray">
         Build your next website even faster with premade responsive components
         designed and built with Redix Themes All components are free forever for
         everyone.
       </Text>
 
-      <Flex gap="8">
-        <Flex direction="column" gap="4">
-          {FeaturesCol1.map((f, i) => {
-            return (
-              <Flex key={i} align="center" gap="2">
-                <CheckIcon color="lime" />
-                <Text weight="bold" color="gray">
-                  {f}
-                </Text>
-              </Flex>
-            )
-          })}
-        </Flex>
+      <Grid columns={{ initial: "1", lg: "3" }} gap={{ initial: "1", lg: "4" }}>
+        {FeaturesCol1.map((feature, index) => {
+          return (
+            <Flex key={index} align="center" gap="2">
+              <CheckIcon color="lime" />
+              <Text weight="bold" color="gray">
+                {feature}
+              </Text>
+            </Flex>
+          )
+        })}
+      </Grid>
 
-        <Flex direction="column" gap="4">
-          {FeaturesCol2.map((f, i) => {
-            return (
-              <Flex key={i} align="center" gap="2">
-                <CheckIcon color="lime" />
-                <Text weight="bold" color="gray">
-                  {f}
-                </Text>
-              </Flex>
-            )
-          })}
-        </Flex>
-      </Flex>
-
-      <Flex gap="8">
-        <Button color="iris" size="4">
-          Browse Templates
-        </Button>
+      <Flex
+        gap={{ initial: "3", lg: "8" }}
+        direction={{ initial: "column", lg: "row" }}
+        align={{ initial: "center", lg: "start" }}
+      >
+        <Link href="#templates">
+          <Button color="iris" size="4">
+            Browse Templates
+          </Button>
+        </Link>
         <Button variant="soft" size="4">
           <GitHubLogoIcon />
           GitHub
         </Button>
-        <Button variant="soft" size="4">
-          Get Started with RedixUI <ExternalLinkIcon />
-        </Button>
+        <Link href="https://www.radix-ui.com/">
+          <Button variant="soft" size="4">
+            Get Started with RedixUI <ExternalLinkIcon />
+          </Button>
+        </Link>
       </Flex>
     </Flex>
   )

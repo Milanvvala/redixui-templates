@@ -1,4 +1,3 @@
-"use client"
 import { Card, Flex, Text } from "@radix-ui/themes"
 
 export default function Dashboard() {
@@ -12,8 +11,8 @@ export default function Dashboard() {
       align="center"
       justify="center"
       gap="8"
-      m="8"
-      p="8"
+      m="4"
+      p="6"
       direction="column"
     >
       {/* Heading */}

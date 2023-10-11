@@ -1,9 +1,4 @@
-"use client"
-import {
-  MoonIcon,
-  PlusIcon,
-  SunIcon
-} from "@radix-ui/react-icons"
+import { MoonIcon, PlusIcon, SunIcon } from "@radix-ui/react-icons"
 import { Logo } from "@/components"
 import { Avatar, Button, Flex, IconButton, Link } from "@radix-ui/themes"
 
@@ -28,7 +23,7 @@ export default function Dashboard() {
         <Button>
           <PlusIcon /> Action
         </Button>
-        <IconButton variant="outline">
+        <IconButton variant="outline" radius="full">
           <Avatar
             src="https://source.unsplash.com/random/?portrait,face"
             fallback="M"

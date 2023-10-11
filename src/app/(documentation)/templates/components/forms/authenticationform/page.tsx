@@ -1,9 +1,8 @@
-"use client"
 import { Button, Card, Flex, Link, Text, TextField } from "@radix-ui/themes"
 
 export default function AuthenticationForm() {
   return (
-    <Flex direction="column" gap='6' align="center" m="8" p="8">
+    <Flex direction="column" gap="6" align="center" m="8" p="8">
       <Flex direction="column" align="center" gap="3">
         <Text size="8" weight="bold">
           Sign up

@@ -1,4 +1,3 @@
-"use client"
 import { Logo } from "@/components"
 import {
   InstagramLogoIcon,
@@ -13,7 +12,7 @@ export default function Component() {
       <Flex pl="4">
         <Logo />
       </Flex>
-      <Text size="3">© 2022 Chakra Templates. All rights reserved</Text>
+      <Text size="3">© 2022 Redix Themes Templates. All rights reserved</Text>
       <Flex justify="between" gap="5" align="center" pr="4">
         <IconButton variant="soft">
           <TwitterLogoIcon />

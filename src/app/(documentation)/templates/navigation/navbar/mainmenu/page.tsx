@@ -1,4 +1,3 @@
-"use client"
 import {
   CaretDownIcon,
   GitHubLogoIcon,
@@ -27,7 +26,6 @@ export default function MainMenu() {
         pr="4"
         display={{ initial: "none", xs: "flex" }}
       >
-
         <DropdownMenu.Root>
           <DropdownMenu.Trigger>
             <Button variant="ghost" size="3">
@@ -42,9 +40,7 @@ export default function MainMenu() {
             <DropdownMenu.Item>Blog</DropdownMenu.Item>
 
             <DropdownMenu.Separator />
-            <DropdownMenu.Item color="sky">
-              Newslatter
-            </DropdownMenu.Item>
+            <DropdownMenu.Item color="sky">Newslatter</DropdownMenu.Item>
           </DropdownMenu.Content>
         </DropdownMenu.Root>
 
